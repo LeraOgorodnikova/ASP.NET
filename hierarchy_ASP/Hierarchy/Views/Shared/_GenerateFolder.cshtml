@@ -1,0 +1,32 @@
+﻿@model Hierarchy.Models.Folder
+
+<div class="tree" style="padding-left:15px;">
+
+    <p><strong>@Model.name</strong> @Model.date @Model.child_objects</p>
+
+
+    @if (@Model.files != null)
+    {
+        if (@Model.files.Count() != 0)
+        {
+
+            foreach (var file in @Model.files)
+            {
+                @Html.Partial("_GenerateFile", file)
+            }
+        }
+    }
+
+    @if (@Model.subFolder != null)
+    {
+        if (@Model.subFolder.Count() != 0)
+        {
+            foreach (var folder in @Model.subFolder)
+            {
+                @Html.Partial("_GenerateFolder", folder)
+            }
+        }
+    }
+
+
+</div>

@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Hierarchy";
+}
+@model Hierarchy.Models.Folder
+
+<h2>Иерархия</h2>
+
+@if (@Model.subFolder !=null)
+{
+    if (@Model.subFolder.Count() != 0) { 
+        
+        foreach (var folder in @Model.subFolder)
+      {
+        @Html.Partial("_GenerateFolder",folder)
+      }
+    }
+}
+
+
+
+
