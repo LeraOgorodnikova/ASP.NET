@@ -8,16 +8,11 @@ using Ninject;
 
 namespace ConsoleApplication1
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            /*var c = new Container();
-            c.Register<ILogger, Logger>(Reuse.Singleton);
-            c.Register<IDatabase, Database>();
-           
-            IDatabase db = c.Resolve<Database>();*/
-
             IKernel ninjectKernel = new StandardKernel();
             ninjectKernel.Bind<IDatabase>().To<Database>().InTransientScope();
             ninjectKernel.Bind<ILogger>().To<Logger>().InSingletonScope();

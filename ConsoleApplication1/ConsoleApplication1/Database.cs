@@ -16,9 +16,8 @@ namespace ConsoleApplication1
         }
         public void Execute(string query)
         {
-            ///code
-            
-            logger.Log(query);
+            ///code       
+            logger.Write(query);
         }
 
         public ILogger getLogger()
