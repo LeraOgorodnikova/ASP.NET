@@ -1,0 +1,36 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Glasses",
+    "description": "In the set of two pcs. High quality. A perfect gift for all occasions.",
+    "price": 1769
+  },
+
+  "2": {
+    "id": 2,
+    "name": "Card holder",
+    "description": "The card holder is made of high-quality materials. Width 7.5 cm, length 10.5 cm.",
+    "price": 231
+  },
+
+  "3": {
+    "id": 3,
+    "name": "Female bracelet",
+    "description": "Length 17 cm. Weight 13 g.",
+    "price": 201
+  },
+
+  "4": {
+    "id": 4,
+    "name": "Headphones",
+    "description": "In-channel metal headphones. Weight 20 g. Ergonomic design.",
+    "price": 499
+  },
+
+  "5": {
+    "id": 5,
+    "name": "Face cream",
+    "description": "Korean deep moisturizing face cream. Suitable for all skin types.",
+    "price": 106
+  }
+}

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Магазин";
+}
+<h1>Товары</h1>
+
+@foreach (var item in Model)
+{
+    <div class="item">
+        <div class="item-name">@item.name</div>
+        <div class="item-next"> <a href="~/ItemDesc/Index/@item.id">Подробнее</a></div>
+    </div>
+    <h2></h2>
+}
